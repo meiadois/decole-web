@@ -28,7 +28,7 @@ class Home extends Component {
 
                 <article id="first" className="container box style1 right">
                     <div className="container">
-                        <a href="#" className="image fit"><img src={my_app} alt="" /></a>
+                        <a href="https://decole.app" className="image fit"><img src={my_app} alt="" /></a>
                     </div>
 
 
@@ -42,7 +42,7 @@ class Home extends Component {
                 </article>
 
                 <article className="container box style1 left">
-                    <a href="#" className="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                    <a href="https://decole.app" className="image fit"><img src="images/pic02.jpg" alt="" /></a>
                     <div className="inner">
                         <header>
                             <h2>Mollis posuere<br />
