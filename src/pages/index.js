@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FiInstagram, FiFacebook, FiMenu, FiMail } from 'react-icons/fi';
 import Rightnav from '../components/sidebar/Rightnav';
 import Burger from '../components/sidebar/Burger';
+import Nav from '../components/nav'
 
 
 
@@ -20,8 +21,8 @@ export default function Home() {
 
       <main>
 
-
-        <nav className="navbar">
+        <Nav />
+        {/* <nav className="navbar">
           <div className="p-2 max-w-5xl m-auto flex justify-between items-center">
             <img src="../decole_verdev2.svg" width={150} className="p-2 hidden md:inline-block" />
             <img src="../LogoCircle.svg" width={60} className="p-2 md:hidden inline-block" />
@@ -44,7 +45,7 @@ export default function Home() {
 
           </div>
 
-        </nav>
+        </nav> */}
 
         <div>
 
@@ -213,7 +214,7 @@ export default function Home() {
           <form className="w-full max-w-lg">
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-name">
                   Nome
                   </label>
                 <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Ex: Jane" />
@@ -223,7 +224,7 @@ export default function Home() {
 
 
               <div className="w-full md:w-1/2 px-3">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
                   email
                   </label>
                 <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="Ex: suporte@decoleapp.com" />
@@ -235,7 +236,7 @@ export default function Home() {
 
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
-                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
+                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-message">
                   Messagem
                   </label>
                 <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-message" type="text" placeholder="Ex: sua opinião" />
