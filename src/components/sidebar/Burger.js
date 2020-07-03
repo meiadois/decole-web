@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Rightnav from '../sidebar/Rightnav';
+import Rightnav from './Rightnav';
 
 const StyledBurger = styled.div`
 
@@ -22,7 +22,7 @@ const StyledBurger = styled.div`
    div{
      width: 2rem;
      height: 0.25rem;
-     background-color:#fff;
+     background-color:#333;
      border-radius:10px;
      transform-origin:1px;
      transition:all 0.3s linear;
@@ -49,9 +49,14 @@ const StyledBurger = styled.div`
 `;
 
 
-const Burger = (open) => {
+const Burger = () => {
 
   var [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    setOpen(false)
+
+  }, []);
 
   return (
     <>

@@ -1,6 +1,11 @@
-// import App from 'next/app'
+import App from 'next/app'
 import '../styles/main.css'
 import Header from '../components/header/Header'
+import styled from 'styled-components';
+//import Burger from '../components/sidebar/Burger';
+import Nav from '../components/sidebar/Navbar';
+import React from 'react';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>

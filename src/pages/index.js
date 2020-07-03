@@ -4,12 +4,16 @@ import styled from 'styled-components';
 import { FiInstagram, FiFacebook, FiMenu, FiMail } from 'react-icons/fi';
 import Rightnav from '../components/sidebar/Rightnav';
 import Burger from '../components/sidebar/Burger';
-import Nav from '../components/nav'
 
+import Nav from '../components/nav';
+import Nav1 from '../components/sidebar/Navbar';
 
 
 
 export default function Home() {
+
+  var [open, setOpen] = useState(false)
+
   return (
 
     <div className="container">
@@ -20,38 +24,12 @@ export default function Home() {
 
 
       <main>
-
         <Nav />
-        {/* <nav className="navbar">
-          <div className="p-2 max-w-5xl m-auto flex justify-between items-center">
-            <img src="../decole_verdev2.svg" width={150} className="p-2 hidden md:inline-block" />
-            <img src="../LogoCircle.svg" width={60} className="p-2 md:hidden inline-block" />
-            <div className="p-2 flex items-center hidden md:inline-block">
-              <a href="#inicio" className="text-teal-500 hover:text-green">Inicio</a>
-              <a href="#app" className="text-teal-500 hover:text-green">Sobre App</a>
-              <a href="#somos" className="text-teal-500 hover:text-green">Quem Somos</a>
-              <a href="#fale-conosco" className="text-teal-500 hover:text-green">Fale Conosco</a>
-
-              <a className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Baixar</a>
-
-
-            </div>
-            <div className="p-3 flex items-center md:hidden inline-block">
-
-
-              <Burger size={40} color={"#ffffffff"} open={false} />
-            </div>
-
-
-          </div>
-
-        </nav> */}
-
         <div>
 
         </div>
         <session className="first_session" id="inicio">
-          <div className="p-2">
+          <div >
 
 
 
@@ -93,7 +71,7 @@ export default function Home() {
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
                 <div className="sm:flex sm:items-center">
                   <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Davi   Souza   </p>
+                    <p className="text-base md:text-xl lg:text-xl">Davi  Macedo  </p>
                     <p className="text-sm text-gray-600">Programador</p>
 
                   </div>
@@ -212,8 +190,8 @@ export default function Home() {
 
 
           <form className="w-full max-w-lg">
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <div className="flex flex-wrap ">
+              <div className="w-full md:w-1/2 px-5 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-name">
                   Nome
                   </label>
@@ -223,7 +201,7 @@ export default function Home() {
               </div>
 
 
-              <div className="w-full md:w-1/2 px-3">
+              <div className="w-full md:w-1/2 px-5">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
                   email
                   </label>
@@ -234,8 +212,8 @@ export default function Home() {
             </div>
 
 
-            <div className="flex flex-wrap -mx-3 mb-6">
-              <div className="w-full px-3">
+            <div className="flex flex-wrap ">
+              <div className="w-full px-5">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-message">
                   Messagem
                   </label>
@@ -248,9 +226,9 @@ export default function Home() {
             <div className="md:flex md:items-center">
               <div className="md:w-1/3"></div>
               <div className="btntext">
-                <button className="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0" type="button">
+                <button className="  btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 lg:mt-0" type="button">
                   Enviar
-            </button>
+                </button>
               </div>
             </div>
 

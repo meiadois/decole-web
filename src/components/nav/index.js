@@ -26,61 +26,61 @@ class Nav extends React.Component {
     }));
   }
 
-  componentDidMount() {}
+  componentDidMount() { }
 
-  componentWillUnmount() {}
+  componentWillUnmount() { }
 
   renderNavbarLink(name, href) {
     const { sideBar } = this.state;
     const html = (
       <li>
         <Link href={href}>
-            <a
-              id="nameNav"
-              href={href}
-              style={{
+          <a
+            id="nameNav"
+            href={href}
+            style={{
               animation: sideBar === true ? `navLinkFade 0.5s ease forwards ${this.countLinks / 7 + 1.0}s` : '',
             }}
 
-              onClick={() => {
-            if (sideBar === true) this.navCollapsedButtonHandleClick();
+            onClick={() => {
+              if (sideBar === true) this.navCollapsedButtonHandleClick();
             }}
-            >
-                {name}
-            </a>
+          >
+            {name}
+          </a>
         </Link>
       </li>
-      
-);
-    
+
+    );
+
 
     this.countLinks += 1;
 
     return html;
   }
 
-  renderLogoutIcon(){
+  renderLogoutIcon() {
     const { sideBar } = this.state;
     const html = (
       <li>
-        <a 
-        style={{
-          animation: sideBar === true ? `navLinkFade 0.5s ease forwards ${this.countLinks / 7 + 1.0}s` : '',
-          
-        }}
-        
-        onClick={() => {
-                Router.push('/login');
-        }}
+        <a
+          style={{
+            animation: sideBar === true ? `navLinkFade 0.5s ease forwards ${this.countLinks / 7 + 1.0}s` : '',
+
+          }}
+
+          onClick={() => {
+            Router.push('/login');
+          }}
         >
-        <i id="logout-button" className="fa fa-sign-in-alt" aria-hidden="true"></i>
-        
+          <i id="logout-button" className="fa fa-sign-in-alt" aria-hidden="true"></i>
+
         </a>
 
       </li>
-      
-);
-    
+
+    );
+
 
     this.countLinks += 1;
 
@@ -92,25 +92,26 @@ class Nav extends React.Component {
       <>
         <nav>
           <div className="nav-logo">
-            <Link  href='/'>
+            <Link href='/'>
               <a href='/'>
-            <div className="logo" id="logoNav">
-                            <img id="imgNav" alt="Ícone" src="/favicon.png" />
-                        </div>
+                <div className="logo" id="logoNav">
+                  <img src="../decole_verdev2.svg" width={150} className="p-2 hidden md:inline-block" />
+                  <img src="../LogoCircle.svg" width={60} className="p-2 md:hidden inline-block" />
+
+                </div>
               </a>
             </Link>
           </div>
-          
+
           <ul
             className={`nav-links${
               this.state.sideBar === true ? ' nav-active' : ''
-            }`}
+              }`}
           >
-            {this.renderNavbarLink('Inicio', '/')}
-            {this.renderNavbarLink('Produtos', '/admin/produtos')}
-            {this.renderNavbarLink('Parâmetros', '/admin/parametros')}
-            {this.renderNavbarLink('Operadores', '/admin/operadores')}
-            {this.renderNavbarLink('Clientes', '/admin/clientes')}
+            {this.renderNavbarLink('App', '#app')}
+            {this.renderNavbarLink('Quem Somos', '#somos')}
+            {this.renderNavbarLink('Fale Conosco', '#fale-conosco')}
+            {this.renderNavbarLink('Baixar', '#app')}
 
 
             {this.renderLogoutIcon()}
@@ -118,7 +119,8 @@ class Nav extends React.Component {
           <div
             className={`nav-collapsed-button${
               this.state.navCollapsed === true ? ' nav-collapse-toggle' : ''
-            }`}
+              }`}
+
             onClick={() => this.navCollapsedButtonHandleClick()}
           >
             <div className="collapse-line-one" />
@@ -138,9 +140,9 @@ class Nav extends React.Component {
             justify-content: space-around;
             align-items: center;
             min-height: 8vh;
-            background-color: var(--navbar-bg-color);
-            z-index: 100;
-            color: var(--navbar-text-color);
+            background-color: rgba(255, 255, 255, 0.1);
+            z-index: 20;
+            color: #ffff;
           }
           .nav-logo {
             text-transform: uppercase;
@@ -148,11 +150,11 @@ class Nav extends React.Component {
             font-size: 18px;
           }
           .nav-logo a {
-            color: var(--navbar-text-color);
+            color: #fff;
             text-decoration: none;
           }
           .nav-logo h2 {
-            color: var(--navbar-text-color);
+            color: #321312;
           }
           .nav-links {
             display: flex;
@@ -172,7 +174,7 @@ class Nav extends React.Component {
             cursor: pointer;
           }
           .nav-collapsed-button div {
-            background-color: var(--navbar-text-color);
+            background-color: #ffffffff;
             width: 25px;
             height: 3px;
             margin: 5px;
@@ -187,11 +189,12 @@ class Nav extends React.Component {
 
           @media screen and (max-width: 768px) {
             .nav-links {
+              z-index:20;
               position: fixed;
               right: 0;
               height: 92vh;
-              top: 8vh;
-              background-color: var(--navbar-bg-color);
+              top: 10vh;
+              background-color:#34494F;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -249,7 +252,12 @@ class Nav extends React.Component {
              
             }
             .nav-links a {
-              color: var(--navbar-text-color);
+              color: #fff;
+              text-decoration: none;
+              font-weight: bold;
+            }
+            .nav-links a:hover {
+              color: #blue;
               text-decoration: none;
               font-weight: bold;
             }
