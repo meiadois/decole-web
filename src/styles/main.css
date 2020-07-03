@@ -14,7 +14,7 @@
 .navbar {
     height: 10vh;
     width: 100vw;
-    background-color:rgba(255,255,255,0.1);
+    background-color:rgba(255, 255, 255, 0.1);
     position: fixed
 }
 .navbaritem {
@@ -36,6 +36,7 @@
     width: 100vw;
     background-image: url(/mundo.jpg);
     background-repeat: no-repeat;
+    
     
 
 }
@@ -59,7 +60,7 @@
     align-content: center;
     height: 55vh;
     width: 100vw;
-    background-color:#009688;
+    background-color:#34494F;
     
 }
 
@@ -72,6 +73,26 @@
     height: 100vh;
     width: 100vw;
 }
+.app_session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color:rgb(239, 231, 231);
+    height: 100vh;
+    width: 100vw;
+}
+.somos_session {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color:#34494F;
+    height: 110vh;
+    width: 100vw;
+}
 
 .faleconosco_session {
     display: flex;
@@ -79,7 +100,8 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: white;
+    
+    background-color: rgb(239, 231, 231);
     height: 80vh;
     width: 100vw;
 }
@@ -112,8 +134,10 @@ h2:visited{
     @apply p-2 inline-block text-center align-middle ;
 }
 
-
-
+html,
+body {
+    @apply h-screen;
+}
 @media only screen and (max-width: 959px) {
     p{
         font-size: 10px;
