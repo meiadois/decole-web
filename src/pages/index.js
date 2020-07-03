@@ -1,5 +1,10 @@
 import Head from 'next/head';
+import React, { useState } from 'react';
+import styled from 'styled-components';
 import { FiInstagram, FiFacebook, FiMenu, FiMail } from 'react-icons/fi';
+import Rightnav from '../components/sidebar/Rightnav';
+import Burger from '../components/sidebar/Burger';
+
 
 
 
@@ -33,9 +38,10 @@ export default function Home() {
             <div className="p-3 flex items-center md:hidden inline-block">
 
 
-              <FiMenu size={40} color={"#ffffffff"} />
-
+              <Burger size={40} color={"#ffffffff"} open={false} />
             </div>
+
+
           </div>
 
         </nav>
@@ -63,7 +69,7 @@ export default function Home() {
 
           <div className="p-2 max-w-3xl m-1 flex justify-between items">
 
-            <p className="text-white text-center text-justify text-xl sm:text-2xl">
+            <p className="text-white text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">
               Decole é um app especialista em conhecimento digital. ? sucesso online Criado em 2020, em
               Salvador.
               Nosso trabalho é proporcionar a melhor formação digital. Nosso principal diferencial é
@@ -75,7 +81,7 @@ export default function Home() {
 
           </div>
 
-          <h2 className="text-white text-center text-justify text-2xl sm:text-4xl"> Nosso Time</h2>
+          <h2 className="text-white text-center text-justify text-xl sm:text-2xl"> Nosso Time</h2>
 
 
           <div className="p-1 max-w-3xl  flex justify-between items-end">
@@ -86,7 +92,7 @@ export default function Home() {
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
                 <div className="sm:flex sm:items-center">
                   <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">Davi   Souza   </p>
+                    <p className="text-base md:text-xl lg:text-xl">Davi   Souza   </p>
                     <p className="text-sm text-gray-600">Programador</p>
 
                   </div>
@@ -98,52 +104,7 @@ export default function Home() {
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
                 <div className="sm:flex sm:items-center">
                   <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">Eduardo Correia</p>
-                    <p className="text-sm text-gray-600">Programador</p>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">Guilherme Cunha</p>
-                    <p className="text-sm text-gray-600">Programador</p>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-
-          <div className="p-1 max-w-3xl flex justify-between items-end">
-
-
-
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">Janaína Souza</p>
-                    <p className="text-sm text-gray-600">Programador</p>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">João Carvalho</p>
+                    <p className="text-base md:text-xl lg:text-xl">Eduardo Correia</p>
                     <p className="text-sm text-gray-600">Programador</p>
 
                   </div>
@@ -156,7 +117,7 @@ export default function Home() {
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
                 <div className="sm:flex sm:items-center">
                   <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">Naiara Neves</p>
+                    <p className="text-base md:text-xl lg:text-xl">Guilherme Cunha</p>
                     <p className="text-sm text-gray-600">Programador</p>
 
                   </div>
@@ -175,9 +136,54 @@ export default function Home() {
             <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
                 <div className="sm:flex sm:items-center">
+                  <div className="sm:ml-4 sm:text-left text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Janaína Souza</p>
+                    <p className="text-sm text-gray-600">Programador</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
+                <div className="sm:flex sm:items-center">
+                  <div className="sm:ml-4 sm:text-left text-center">
+                    <p className="text-base md:text-xl lg:text-xl">João Carvalho</p>
+                    <p className="text-sm text-gray-600">Programador</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
+                <div className="sm:flex sm:items-center">
+                  <div className="sm:ml-4 sm:text-left text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Naiara Neves</p>
+                    <p className="text-sm text-gray-600">Programador</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div className="p-1 max-w-3xl flex justify-between items-end">
+
+
+
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
+                <div className="sm:flex sm:items-center">
 
                   <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-xl">Ronaldo José</p>
+                    <p className="text-base md:text-xl lg:text-xl">Ronaldo José</p>
                     <p className="text-sm text-gray-600">Programador</p>
 
                   </div>
@@ -198,7 +204,7 @@ export default function Home() {
 
           <div className="md:flex md:items-center">
 
-            <h1 className="text-secondary text-center text-2xl sm:text-6xl" >Fale Conosco </h1>
+            <h1 className="text-secondary text-center text-xl sm:text-4xl lg:text-6xl xl:text-6xl" >Fale Conosco </h1>
 
           </div>
 
