@@ -11,7 +11,7 @@ import { Form } from '@unform/web';
 import Input from '../components/Form/input';
 import ReactSelect from '../components/Form/select';
 import * as Yup from 'yup';
-//simport swal from 'sweetalert';
+import swal from 'sweetalert';
 
 
 
@@ -29,7 +29,7 @@ export default function Home() {
 
   async function handleSubmit(data, { reset }) {
 
-    //swal("Good job!", "You clicked the button!", "success");
+
 
     try {
 
@@ -43,6 +43,8 @@ export default function Home() {
       console.log(data);
 
       formRef.current.setErrors({});
+
+      swal("Sucesso!", "Sua messagem foi enviada!", "success");
 
       reset();
     } catch (error) {
@@ -58,7 +60,11 @@ export default function Home() {
 
         formRef.current.setErrors(errorMessages);
 
+      } else {
+
+        swal("ops!", "Sua messagem não foi enviada,tente denovo", "error");
       }
+
 
     }
 
