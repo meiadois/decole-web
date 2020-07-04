@@ -23,7 +23,7 @@ html {
     height: 10vh;
     width: 100vw;
     background-color:rgba(255, 255, 255, 0.1);
-    position: fixed
+    position: fixed;
 }
 .navbaritem {
     display: flex;
@@ -73,6 +73,8 @@ html {
     height: 55vh;
     width: 100vw;
     background-color:#34494F;
+    background-size:100%;
+    background-size: cover;
     
 }
 
@@ -128,6 +130,32 @@ html {
     height: 20vh;
     width: 100vw;
 }
+
+.test{
+    height: 10vh;
+    width: 12vw;
+
+}
+
+.select {
+    color: gray;
+    transition: color 0s 2147483647s;
+    
+    
+  }
+  
+  .select:hover,
+  .select:focus,
+  .select:active,
+  .select:focus {
+    color: gray;
+    transition:0s;
+  }
+  
+  .select option {
+    color: #333;
+  }
+  
 
 
 
