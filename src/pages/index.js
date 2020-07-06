@@ -12,6 +12,7 @@ import Input from '../components/Form/input';
 import ReactSelect from '../components/Form/select';
 import * as Yup from 'yup';
 import swal from 'sweetalert';
+import api from '../services/api';
 
 
 
@@ -27,6 +28,27 @@ export default function Home() {
     { value: 'outros', label: 'Outros' }
   ]
 
+  async function submitForm(data) {
+
+    try {
+
+      //const response = await api.post('formsite',{});
+      console.log(data.name);
+      console.log(data.email);
+      console.log(data.message);
+      console.log(data.select);
+
+      const name = data.name;
+      const email = data.email;
+      const message = data.message;
+      const select = data.select;
+      //const response = await api.post('formsite', { name, email, message, select });
+
+    } catch (error) {
+
+    }
+  }
+
   async function handleSubmit(data, { reset }) {
 
 
@@ -40,9 +62,11 @@ export default function Home() {
         select: Yup.string().required('A opção é obrigatório'),
       });
       await screma.validate(data, { abortEarly: false, })
-      console.log(data);
+      //console.log(data);
 
       formRef.current.setErrors({});
+
+      submitForm(data);
 
       swal("Sucesso!", "Sua messagem foi enviada!", "success");
 
@@ -314,10 +338,10 @@ export default function Home() {
         <div className="h-screen max-w-5xl m-auto flex justify-between items-center">
           <a href="https://www.facebook.com/Decole-104392271249723">
 
-            <FiFacebook color={"#ffffffff"} className="rounded-full hover:bg-blue" />
+            <FiFacebook color={"#ffffffff"} size={30} className="rounded-full hover:bg-blue" />
           </a>
           <a href="https://www.instagram.com/oficialdecole/?hl=pt-br">
-            <FiInstagram color={"#ffffffff"} className="mx-10 rounded-full hover:bg-instagram" />
+            <FiInstagram color={"#ffffffff"} size={30} className="mx-10 rounded-full hover:bg-instagram" />
 
           </a>
           {/*} <a>
