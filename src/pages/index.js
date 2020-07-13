@@ -13,8 +13,7 @@ import ReactSelect from '../components/Form/select';
 import * as Yup from 'yup';
 import swal from 'sweetalert';
 import api from '../services/api';
-
-
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -33,18 +32,20 @@ export default function Home() {
     try {
 
       //const response = await api.post('formsite',{});
-      console.log(data.name);
+      /*console.log(data.name);
       console.log(data.email);
       console.log(data.message);
-      console.log(data.select);
+      console.log(data.select);*/
 
       const name = data.name;
       const email = data.email;
       const message = data.message;
-      const select = data.select;
-      //const response = await api.post('formsite', { name, email, message, select });
+      const reason = data.select;
+      const response = await api.post('contacts', { message, email, name, reason });
+      //console.log(response.data);
 
     } catch (error) {
+      swal("ops!", "não conseguimos entrar em contato com o serviço, tente mais tarde", "error");
 
     }
   }
@@ -86,7 +87,7 @@ export default function Home() {
 
       } else {
 
-        swal("ops!", "Sua messagem não foi enviada,tente denovo", "error");
+        swal("ops!", "Sua messagem não foi enviada,tente de novo", "error");
       }
 
 
@@ -121,7 +122,10 @@ export default function Home() {
         <session className="app_session" id="app">
           <div>
 
-            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">O Aplicativo foi desenvolvido para que seja rápido e fácil de aprender a integrar o seu negócio ao meio digital e trazendo a possibilidade de criar rede de parcerias e se impulsionar</p>
+            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Idealizado em 2020, a decole é um projeto de voltado para o mundo digital,  com o intuito de fortalecer os negócios dos microempreendedores através da visibilidade digital.</p>
+            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nós da Decole, sabemos a importância da presença digital para o microempreendedor. Portanto elaboramos e desenvolvemos um aplicativo interativo para lhe ajudar a decolar o seu negócio.</p>
+            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Por que escolher a decole?</p>
+            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nosso aplicativo conta com um asservo de lições mostrando como acrescentar visibilidade para o seu negócio dentro das redes sociais, através de um assistente flutuante em seu celular. Além de contar com um sistema para criar parcerias e conhecer novas empresas da sua ou outras áreas.</p>
           </div>
         </session>
         <session className="somos_session" id="somos" >
@@ -137,6 +141,8 @@ export default function Home() {
             </p>
 
           </div>
+
+
 
           <h2 className="text-white text-center text-justify text-xl sm:text-2xl"> Nosso Time</h2>
 
@@ -186,7 +192,7 @@ export default function Home() {
           </div>
 
 
-          <div className="p-1 max-w-3xl flex justify-between items-end">
+          <div className=" max-w-3xl flex justify-between items-end">
 
 
 
@@ -195,7 +201,7 @@ export default function Home() {
                 <div className="sm:flex sm:items-center">
                   <div className="sm:ml-4 sm:text-left text-center">
                     <p className="text-base md:text-xl lg:text-xl">Janaína Souza</p>
-                    <p className="text-sm text-gray-600">Programador</p>
+                    <p className="text-sm text-gray-600">Negocios e Marketing</p>
 
                   </div>
                 </div>
@@ -220,7 +226,7 @@ export default function Home() {
                 <div className="sm:flex sm:items-center">
                   <div className="sm:ml-4 sm:text-left text-center">
                     <p className="text-base md:text-xl lg:text-xl">Naiara Neves</p>
-                    <p className="text-sm text-gray-600">Programador</p>
+                    <p className="text-sm text-gray-600">Negocios e Testes</p>
 
                   </div>
                 </div>
@@ -241,7 +247,7 @@ export default function Home() {
 
                   <div className="sm:ml-4 sm:text-left text-center">
                     <p className="text-base md:text-xl lg:text-xl">Ronaldo José</p>
-                    <p className="text-sm text-gray-600">Programador</p>
+                    <p className="text-sm text-gray-600">Desenvolvedor</p>
 
                   </div>
                 </div>
@@ -282,7 +288,7 @@ export default function Home() {
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
                   email
                   </label>
-                <Input name="email" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-green-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="Ex: suporte@decole.com" />
+                <Input name="email" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-green-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="Ex: suporte@decole.com" />
 
               </div>
             </div>
@@ -313,9 +319,9 @@ export default function Home() {
 
 
 
-            <div className="md:flex md:items-center">
+            <div className="md:flex md:items-center  ">
               <div className="md:w-1/3"></div>
-              <div className="btntext">
+              <div className="btntext ">
                 <button className="  btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " type="submit">
                   Enviar
                 </button>
@@ -350,6 +356,29 @@ export default function Home() {
   </a>*/}
 
         </div>
+
+
+
+        <div className="h-screen max-w-5xl m-auto flex justify-between items-center">
+
+          <Link href='/uso'>
+            <a
+              href='/uso'
+            >
+              Termo de uso
+            </a>
+          </Link>
+
+          <Link href='/privacidade'>
+            <a
+              href='/privacidade'
+            >
+              POLÍTICA DE PRIVACIDADE
+            </a>
+          </Link>
+
+        </div>
+
       </footer>
     </div >
   )

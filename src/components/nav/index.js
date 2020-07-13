@@ -111,7 +111,7 @@ class Nav extends React.Component {
             {this.renderNavbarLink('App', '#app')}
             {this.renderNavbarLink('Quem Somos', '#somos')}
             {this.renderNavbarLink('Fale Conosco', '#fale-conosco')}
-            {this.renderNavbarLink('Baixar', '#app')}
+
 
 
             {this.renderLogoutIcon()}
