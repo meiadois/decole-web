@@ -151,24 +151,24 @@ export default function Home() {
 
 
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Davi  Macedo  </p>
-                    <p className="text-sm text-gray-600">Desenvolvedor</p>
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Davi </p>
+                    <p className="md:text-sm text-xs text-gray-600">Desenvolvedor</p>
 
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Eduardo Correia</p>
-                    <p className="text-sm text-gray-600">Desenvolvedor</p>
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Eduardo</p>
+                    <p className="md:text-sm text-xs text-gray-600">Desenvolvedor</p>
 
                   </div>
                 </div>
@@ -176,12 +176,12 @@ export default function Home() {
             </div>
 
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Guilherme Cunha</p>
-                    <p className="text-sm text-gray-600">Desenvolvedor</p>
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Guilherme</p>
+                    <p className="md:text-sm text-xs text-gray-600">Desenvolvedor</p>
 
                   </div>
                 </div>
@@ -196,24 +196,24 @@ export default function Home() {
 
 
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Janaína Souza</p>
-                    <p className="text-sm text-gray-600">Negocios e Marketing</p>
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Janaína</p>
+                    <p className="md:text-sm text-xs text-gray-600">Marketing</p>
 
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">João Carvalho</p>
-                    <p className="text-sm text-gray-600">Desenvolvedor</p>
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">João</p>
+                    <p className="md:text-sm text-xs text-gray-600">Desenvolvedor</p>
 
                   </div>
                 </div>
@@ -221,12 +221,12 @@ export default function Home() {
             </div>
 
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Naiara Neves</p>
-                    <p className="text-sm text-gray-600">Negocios e Testes</p>
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Naiara</p>
+                    <p className="md:text-sm text-xs text-gray-600">Testes</p>
 
                   </div>
                 </div>
@@ -241,13 +241,13 @@ export default function Home() {
 
 
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-2">
-              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2">
-                <div className="sm:flex sm:items-center">
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
 
-                  <div className="sm:ml-4 sm:text-left text-center">
-                    <p className="text-base md:text-xl lg:text-xl">Ronaldo José</p>
-                    <p className="text-sm text-gray-600">Desenvolvedor</p>
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Ronaldo</p>
+                    <p className=" md:text-sm text-xs text-gray-600">Desenvolvedor</p>
 
                   </div>
                 </div>
@@ -319,9 +319,9 @@ export default function Home() {
 
 
 
-            <div className="md:flex md:items-center  ">
-              <div className="md:w-1/3"></div>
-              <div className="btntext ">
+            <div className=" item-center ">
+              <div className=""></div>
+              <div className="btntext">
                 <button className="  btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " type="submit">
                   Enviar
                 </button>
@@ -338,7 +338,7 @@ export default function Home() {
         </session>
       </main>
 
-      <footer className="footer_session">
+      <footer className="footer_session items-center">
 
 
         <div className="h-screen max-w-5xl m-auto flex justify-between items-center">
@@ -347,7 +347,7 @@ export default function Home() {
             <FiFacebook color={"#ffffffff"} size={30} className="rounded-full hover:bg-blue" />
           </a>
           <a href="https://www.instagram.com/oficialdecole/?hl=pt-br">
-            <FiInstagram color={"#ffffffff"} size={30} className="mx-10 rounded-full hover:bg-instagram" />
+            <FiInstagram color={"#ffffffff"} size={30} className="ml-10 rounded-full hover:bg-instagram" />
 
           </a>
           {/*} <a>
@@ -363,6 +363,7 @@ export default function Home() {
 
           <Link href='/uso'>
             <a
+              className="text-xs"
               href='/uso'
             >
               Termo de uso
@@ -371,6 +372,7 @@ export default function Home() {
 
           <Link href='/privacidade'>
             <a
+              className="text-xs"
               href='/privacidade'
             >
               POLÍTICA DE PRIVACIDADE

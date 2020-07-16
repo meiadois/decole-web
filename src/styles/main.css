@@ -34,6 +34,13 @@ html {
     margin-bottom: 1w;
     
 }
+.retangulo {
+
+    height: 40px;
+    width: 100px;
+    
+
+}
 .first_session {
     display: flex;
     flex-direction: column;

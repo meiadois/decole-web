@@ -178,7 +178,7 @@ class Nav extends React.Component {
             width: 25px;
             height: 3px;
             margin: 5px;
-            transition: all 0.3s ease;
+            transition: all 0.1s ease;
           }
 
           @media screen and (max-width: 1024) {
@@ -200,10 +200,10 @@ class Nav extends React.Component {
               align-items: center;
               width: 50%;
               transform: translateX(100%);
-              transition: transform 0.5s ease-in;
+              transition: transform 0.1s ease-in;
             }
             .nav-links li a {
-              opacity: 0;
+              opacity: 1;
             }
             .nav-collapsed-button {
               display: block;
@@ -212,16 +212,7 @@ class Nav extends React.Component {
           .nav-active {
             transform: translateX(0%);
           }
-          @keyframes navLinkFade {
-            from {
-              opacity: 0;
-              transform: translateX(50px);
-            }
-            to {
-              opacity: 1;
-              transform: translateX(0px);
-            }
-          }
+          
 
           .nav-collapse-toggle .collapse-line-one {
             transform: rotate(-45deg) translate(-5px, 6px);
