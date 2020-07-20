@@ -147,7 +147,7 @@ export default function Home() {
           <div className=" item-center ">
             <div className=""></div>
             <div className="btntext">
-              <a className="btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " href="/decole(version1.000.1).apk" download>baixar Apk</a>
+              <a className="btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " href="/decole(version1.000.1).apk" download>baixar</a>
             </div>
           </div>
 
