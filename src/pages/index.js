@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
-import { FiInstagram, FiFacebook, FiMenu, FiMail } from 'react-icons/fi';
+import { FiInstagram, FiFacebook, FiMenu, FiMail, FiChevronsDown } from 'react-icons/fi';
 import Rightnav from '../components/sidebar/Rightnav';
 import Burger from '../components/sidebar/Burger';
 
@@ -99,7 +99,7 @@ export default function Home() {
 
     <div className="container">
       <Head>
-        <title>Decole.app</title>
+        <title>Decole</title>
         <link rel="icon" href="/LogoCircle.svg" />
       </Head>
 
@@ -110,13 +110,28 @@ export default function Home() {
 
         </div>
         <session className="first_session" id="inicio">
-          <div >
+          <div className="my-64">
 
 
 
             <h1 className="text-white text-center text-2xl sm:text-6xl" >Decole seu negócio no mundo digital! </h1>
 
+
           </div>
+          <div className="items-center">
+
+
+
+
+
+            <FiChevronsDown color={"#ffffffff"} size={40} />
+
+
+
+          </div>
+
+
+
 
         </session>
         <session className="app_session" id="app">
@@ -127,6 +142,15 @@ export default function Home() {
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Por que escolher a decole?</p>
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nosso aplicativo conta com um asservo de lições mostrando como acrescentar visibilidade para o seu negócio dentro das redes sociais, através de um assistente flutuante em seu celular. Além de contar com um sistema para criar parcerias e conhecer novas empresas da sua ou outras áreas.</p>
           </div>
+
+
+          <div className=" item-center ">
+            <div className=""></div>
+            <div className="btntext">
+              <a className="btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " href="/decole(version1.000.1).apk" download>baixar Apk</a>
+            </div>
+          </div>
+
         </session>
         <session className="somos_session" id="somos" >
 
@@ -196,7 +220,7 @@ export default function Home() {
 
 
 
-            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+            {/*}  <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
                 <div className="items-center">
                   <div className="text-center">
@@ -206,7 +230,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+  </div>*/}
 
             <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
               <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
@@ -234,10 +258,24 @@ export default function Home() {
             </div>
 
 
+            <div className=" lg:flex lg:items-center p-1 lg:p-2 xl:p-1">
+              <div className="flex-grow bg-white shadow-xl rounded-md border-gray-300 p-2 w-24 md:w-32 lg:w-32">
+                <div className="items-center">
+
+                  <div className="text-center">
+                    <p className="text-base md:text-xl lg:text-xl">Ronaldo</p>
+                    <p className=" md:text-sm text-xs text-gray-600">Desenvolvedor</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
 
-          <div className="p-1 max-w-3xl flex justify-between items-end">
+          {/*}  <div className="p-1 max-w-3xl flex justify-between items-end">
 
 
 
@@ -257,7 +295,7 @@ export default function Home() {
 
 
 
-          </div>
+</div>*/}
 
 
         </session>
@@ -322,7 +360,7 @@ export default function Home() {
             <div className=" item-center ">
               <div className=""></div>
               <div className="btntext">
-                <button className="  btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " type="submit">
+                <button className="btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " type="submit">
                   Enviar
                 </button>
               </div>
