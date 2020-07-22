@@ -137,7 +137,7 @@ export default function Home() {
         <session className="app_session" id="app">
           <div>
 
-            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Idealizado em 2020, a decole é um projeto de voltado para o mundo digital,  com o intuito de fortalecer os negócios dos microempreendedores através da visibilidade digital.</p>
+            <p className=" mt-4 p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Idealizado em 2020, a decole é um projeto de voltado para o mundo digital,  com o intuito de fortalecer os negócios dos microempreendedores através da visibilidade digital.</p>
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nós da Decole, sabemos a importância da presença digital para o microempreendedor. Portanto elaboramos e desenvolvemos um aplicativo interativo para lhe ajudar a decolar o seu negócio.</p>
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Por que escolher a decole?</p>
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nosso aplicativo conta com um asservo de lições mostrando como acrescentar visibilidade para o seu negócio dentro das redes sociais, através de um assistente flutuante em seu celular. Além de contar com um sistema para criar parcerias e conhecer novas empresas da sua ou outras áreas.</p>
@@ -147,7 +147,8 @@ export default function Home() {
           <div className=" item-center ">
             <div className=""></div>
             <div className="btntext">
-              <a className="btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " href="/decole(version1.000.1).apk" download>baixar</a>
+              {/*<a className="btntextpri shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-block text-sm px-4 py-2 leading-none border rounded text-white hover:border-red hover:text-teal-500 hover:bg-white mt-4 " href="/decole(version1.000.1).apk" download>baixar</a>*/}
+              <a className="mt-4 w-64 md:w-64 lg:w-64 " href='https://play.google.com/store/apps/details?id=br.com.meiadois.decole'><img alt='Disponível no Google Play' src='/googlePlayBadge.png' /></a>
             </div>
           </div>
 

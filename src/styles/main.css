@@ -115,7 +115,7 @@ html {
     align-items: center;
     align-content: center;
     background-color:rgb(239, 231, 231);
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
 }
 .app_sessionUso {
@@ -166,6 +166,11 @@ html {
 .test{
     height: 10vh;
     width: 12vw;
+
+}
+.foto{
+    height: 20vh;
+    width: 24vw;
 
 }
 
