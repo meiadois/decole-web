@@ -280,7 +280,7 @@ function Home() {
                 <div className="items-center">
                   <div className="text-center">
                     <p className="text-base md:text-xl lg:text-xl">Naiara</p>
-                    <p className="md:text-sm text-xs text-gray-600">Testes</p>
+                    <p className="md:text-sm text-xs text-gray-600">Negócio</p>
 
                   </div>
                 </div>
@@ -335,7 +335,7 @@ function Home() {
 
               <div className="w-full md:w-1/2 px-5 mb-6 md:mb-0">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-name">
-                  Nome
+                  Seu nome
                   </label>
                 <Input name="name" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-green-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Ex: Jane" />
 
@@ -344,9 +344,9 @@ function Home() {
 
               <div className="w-full md:w-1/2 px-5">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-email">
-                  e-mail
+                  seu e-mail
                   </label>
-                <Input name="email" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-green-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="Ex: suporte@decole.com" />
+                <Input name="email" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-green-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="Ex: jane@decole.com" />
 
               </div>
             </div>
@@ -355,7 +355,7 @@ function Home() {
             <div className="flex flex-wrap ">
               <div className="w-full px-5">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-message">
-                  Mensagem
+                  Sua mensagem
                   </label>
                 <Input name="message" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-green-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-message" type="text" placeholder="Ex: sua opinião" />
 
