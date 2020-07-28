@@ -34,13 +34,6 @@ html {
     margin-bottom: 1w;
     
 }
-.retangulo {
-
-    height: 40px;
-    width: 100px;
-    
-
-}
 .first_session {
     display: flex;
     flex-direction: column;
@@ -56,7 +49,7 @@ html {
     
 
 }
-.first_sessionUso {
+.initDoc_session {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,9 +61,6 @@ html {
     
     
 
-}
-.fot{
-    font-size: 20px;
 }
 .btntext{
     
@@ -85,29 +75,7 @@ html {
 }
 
 
-.half_session {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 55vh;
-    width: 100vw;
-    background-color:#34494F;
-    background-size:100%;
-    background-size: cover;
-    
-}
 
-.fullscreen_session {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 100vh;
-    width: 100vw;
-}
 .app_session {
     display: flex;
     flex-direction: column;
@@ -118,7 +86,7 @@ html {
     height: 110vh;
     width: 100vw;
 }
-.app_sessionUso {
+.doc_session {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,16 +131,8 @@ html {
 }
 
 
-.test{
-    height: 10vh;
-    width: 12vw;
 
-}
-.foto{
-    height: 20vh;
-    width: 24vw;
 
-}
 
 .select {
     color: gray;

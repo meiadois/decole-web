@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import Link from 'next/link';
 
 
@@ -46,7 +46,7 @@ function Uso() {
 
       <main>
 
-        <session className="first_sessionUso" id="inicio">
+        <session className="initDoc_session" id="inicio">
           <div >
 
 
@@ -56,7 +56,7 @@ function Uso() {
           </div>
 
         </session>
-        <session className="app_sessionUso p-6" id="app">
+        <session className="doc_session p-6" id="app">
 
 
           <div>

@@ -1,13 +1,11 @@
 import Head from 'next/head';
-import React, { useState, useRef } from 'react';
-import styled from 'styled-components';
-import { FiInstagram, FiFacebook, FiMenu, FiMail, FiChevronsDown, FiPlay, FiCheckCircle } from 'react-icons/fi';
-import { IconName, RiFacebookCircleLine, RiInstagramLine, RiGooglePlayLine } from "react-icons/ri";
-import Rightnav from '../components/sidebar/Rightnav';
-import Burger from '../components/sidebar/Burger';
+import React, { useRef } from 'react';
+
+import { FiChevronsDown, FiCheckCircle } from 'react-icons/fi';
+import { RiFacebookCircleLine, RiInstagramLine, RiGooglePlayLine } from "react-icons/ri";
+
 
 import Nav from '../components/nav';
-import Nav1 from '../components/sidebar/Navbar';
 import { Form } from '@unform/web';
 import Input from '../components/Form/input';
 import ReactSelect from '../components/Form/select';
@@ -19,7 +17,7 @@ import Link from 'next/link';
 
 function Home() {
 
-  var [open, setOpen] = useState(false)
+
   const formRef = useRef(null);
   const options = [
     { value: 'sugestão', label: 'Sugestão' },
@@ -32,11 +30,6 @@ function Home() {
 
     try {
 
-      //const response = await api.post('formsite',{});
-      /*console.log(data.name);
-      console.log(data.email);
-      console.log(data.message);
-      console.log(data.select);*/
 
       const name = data.name;
       const email = data.email;
@@ -45,7 +38,6 @@ function Home() {
 
 
       const response = await api.post('contacts', { message, email, name, reason });
-      //console.log(response.data);
 
     } catch (error) {
       swal("ops!", "não conseguimos entrar em contato com o serviço, tente mais tarde", "error");
@@ -66,20 +58,10 @@ function Home() {
         select: Yup.string().required('A opção é obrigatório'),
       });
       await screma.validate(data, { abortEarly: false, })
-      //console.log(data);
 
       formRef.current.setErrors({});
 
 
-      /*if (data.name.trim().equals("") || data.email.trim().equals("") || data.message.trim().equals("") || data.select.trim().equals("")) {
-
-
-        swal("ops!", "campo preenchido só com espaço", "error");
-
-
-
-      } else {
-      }*/
 
       submitForm(data);
       swal("Sucesso!", "Sua messagem foi enviada!", "success");
@@ -153,11 +135,7 @@ function Home() {
         <session className="app_session" id="app">
           <div>
 
-            {/*} <p className=" mt-4 p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Idealizado em 2020, a decole é um projeto de voltado para o mundo digital,  com o intuito de fortalecer os negócios dos microempreendedores através da visibilidade digital.</p>
-            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nós da Decole, sabemos a importância da presença digital para o microempreendedor. Portanto elaboramos e desenvolvemos um aplicativo interativo para lhe ajudar a decolar o seu negócio.</p>
-            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Por que escolher a decole?</p>
-            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">Nosso aplicativo conta com um asservo de lições mostrando como acrescentar visibilidade para o seu negócio dentro das redes sociais, através de um assistente flutuante em seu celular. Além de contar com um sistema para criar parcerias e conhecer novas empresas da sua ou outras áreas.</p>
-            <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">///</p>*/}
+
             <p className="mt-4  p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-xl xl:text-xl">Diante do crescente número de usúarios na internet, várias empresas precisaram se inserir no mundo digital através das plataformas online para conquistar ainda mais clientes para o seu negócio.</p>
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-xl xl:text-xl">Porém, não são todos os empreendedores que sabem por onde começar nesse universo e por isso nasceu o Decole, um projeto idealizado em 2020, finalista do 1º Hackathon Online do Sebrae Bahia e Grupo Rede+, que tem como objetivo fortalecer negócios através da visibilidade digital. </p>
             <p className=" p-2 max-w-3xl m-1 flex justify-between text-secondary text-center text-justify text-sm sm:text-base md:text-xl lg:text-xl xl:text-xl">O aplicativo desenvolvido conta com diversas etapas que irão apoiar as empresas no processo de transformação digital: </p>
@@ -215,11 +193,6 @@ function Home() {
 
 
 
-            {/*<p className="text-white text-center text-justify p-2 text-sm sm:text-base md:text-xl lg:text-2xl xl:text-2xl">
-              A Decole é uma empresa desenvolvedora de soluções no mundo digital, criada em 2020 com o intuito de fortalecer os negócios dos microempreendedores e assim prospectar os melhores contatos do mercado.
-              Nós da Decole, sabemos a importância da presença digital para o microempreendedor. Por isso nosso objetivo é proporcionar a melhor formação para você.
-
-          </p>*/}
 
           </div>
 
@@ -439,10 +412,7 @@ function Home() {
             <RiGooglePlayLine color={"#ffffffff"} size={24} className="ml-8 " />
 
           </a>
-          {/*} <a>
-            <FiMail color={"#ffffffff"} className="rounded-full hover:bg-red_primary" />
 
-  </a>*/}
 
         </div>
 
