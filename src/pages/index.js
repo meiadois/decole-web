@@ -384,7 +384,7 @@ export default function Home() {
 
             <FiFacebook color={"#ffffffff"} size={30} className="rounded-full hover:bg-blue" />
           </a>
-          <a href="https://www.instagram.com/oficialdecole/?hl=pt-br">
+          <a href="https://www.instagram.com/decole.app">
             <FiInstagram color={"#ffffffff"} size={30} className="ml-10 rounded-full hover:bg-instagram" />
 
           </a>
