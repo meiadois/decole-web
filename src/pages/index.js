@@ -431,7 +431,7 @@ export default function Home() {
 
             <RiFacebookCircleLine color={"#ffffffff"} size={24} className=" " />
           </a>
-          <a href="https://www.instagram.com/oficialdecole/?hl=pt-br">
+          <a href="https://www.instagram.com/decole.app">
             <RiInstagramLine color={"#ffffffff"} size={24} className="ml-8  " />
 
           </a>
