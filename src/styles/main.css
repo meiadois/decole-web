@@ -22,7 +22,7 @@ html {
 .navbar {
     height: 10vh;
     width: 100vw;
-    background-color:rgba(255, 255, 255, 0.1);
+    background-color:rgba(255, 255, 255, 0.9);
     position: fixed;
 }
 .navbaritem {
@@ -47,7 +47,7 @@ html {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     background-image: url(/mundo.jpg);
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ html {
     align-items: center;
     align-content: center;
     background-color:#34494F;
-    height: 110vh;
+    height: 50vh;
     width: 100vw;
 }
 
@@ -216,7 +216,7 @@ html {
 
 a,
 a:visited{
-    @apply p-3 inline-block text-center align-middle text-white uppercase;
+    @apply p-3 inline-block text-center align-middle text-white;
 }
 h1,
 h1:visited{

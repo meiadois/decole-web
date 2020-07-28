@@ -51,7 +51,7 @@ export default function Uso() {
 
 
 
-            <h1 className="text-black text-center text-2xl sm:text-6xl" >Termo de Uso </h1>
+            <h1 className="text-black text-center text-2xl sm:text-6xl" >Termos de Uso </h1>
 
           </div>
 
