@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 
 
-export default function Uso() {
+function Uso() {
 
 
 
@@ -176,3 +176,12 @@ export default function Uso() {
     </div >
   )
 }
+
+Uso.getInitialProps = () => {
+  console.log("Server side rendering!")
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
+export default Uso

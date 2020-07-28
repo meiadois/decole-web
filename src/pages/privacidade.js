@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 
 
-export default function Privacidade() {
+
+function Privacidade() {
 
 
 
@@ -132,3 +133,12 @@ export default function Privacidade() {
     </div >
   )
 }
+
+Privacidade.getInitialProps = () => {
+  console.log("Server side rendering!")
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
+export default Privacidade

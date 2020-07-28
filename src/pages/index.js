@@ -17,7 +17,7 @@ import api from '../services/api';
 import Link from 'next/link';
 
 
-export default function Home() {
+function Home() {
 
   var [open, setOpen] = useState(false)
   const formRef = useRef(null);
@@ -484,3 +484,12 @@ export default function Home() {
     </div >
   )
 }
+
+Home.getInitialProps = () => {
+  console.log("Server side rendering!")
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+
+export default Home
