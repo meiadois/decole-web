@@ -42,7 +42,7 @@ html {
     align-content: center;
     height: 90vh;
     width: 100vw;
-    background-image: url(/mundo.jpg);
+    background-image: url(https://decole-app.s3-sa-east-1.amazonaws.com/mundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
